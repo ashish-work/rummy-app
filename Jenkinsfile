@@ -1,3 +1,7 @@
-node('worker') {
-    echo "CICD started"
+pipeline {
+    stages {
+        stage('Test') {
+            sh " echo Hello"
+        }
+    }
 }
